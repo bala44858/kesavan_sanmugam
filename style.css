@@ -13,6 +13,7 @@ a i{
 #nav{
     position:sticky;
     top: 0;
+    z-index: 4;
     background-color: white;
 }
 .navbar1 a{
@@ -75,11 +76,32 @@ a i{
     background-color: rgba(224, 146, 133, 0.479);
     border-radius: 20px;
 }
+/* design the produt section  */
+.gallery .card :hover{
+    box-shadow:0px 0px 30px red ;
+}
+
+
+
 @media(max-width:700px){
 .about-section img{
     width: 300px;
     height: 400px;
 }
+}
+@media(max-width: 600px) {
+    .map iframe{
+        width: 400px;
+        height: auto;
+
+    }
+}
+@media (max-width:400px) {
+    .map iframe{
+        width: 300px;
+        height: auto;
+    }
+    
 }
 @media (min-width:700px) {
     .about-section .about{
@@ -88,3 +110,6 @@ a i{
     }
     
 }
+
+
+
