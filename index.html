@@ -18,7 +18,7 @@
 
 
 
-    <style>
+    <style type="module" src="js.js">
 
 
 
@@ -27,7 +27,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>keerthanasilk kanchipuram | Best Kanchipuram Sarees | Kanchipuram silks </title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
     <div class="bg-danger p-2">
         <a class="m-2"  href="https://www.facebook.com/groups/2196029503964565/?ref=share"><i class="fa-brands fa-facebook"  ></i></a>
         <a class="m-2" href="https://www.instagram.com/keerthanasilk_kanchipuram/"><i class="fa-brands fa-instagram "></i></a>
-        <a class="m-2 text-light" href="http://wa.me/917904999697"><i class="fa-brands fa-whatsapp"></i>  +91xxxxxxxx</a> 
+        <a class="m-2 text-light" href="http://wa.me/917904999697"><i class="fa-brands fa-whatsapp"></i>+91-7904999697</a> 
         <a class="m-2 text-light" href=""> <i class="fa-solid fa-location-dot"></i>  Kanchipuram</a>
         <!-- <a class="m-2" href="mailto: kesavanshanmugam45@gmail.com"><i class="fa-solid fa-envelope"></i></a> -->
         <!-- <span class="text-light m-2">902572642</span>
@@ -60,9 +60,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-danger fs-5" href="product.html">saares</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link text-danger fs-5" href="#">Link</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link text-danger fs-5" href="#about">About</a>
                     </li>
@@ -108,17 +108,22 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://scontent.fmaa1-3.fna.fbcdn.net/v/t39.30808-6/307274685_2894861977475976_8940268787562323268_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ORnG402aucQAX9D_Oyh&_nc_ht=scontent.fmaa1-3.fna&oh=00_AT8YAWw3mlN0XnRazLodzJkh8IGZgVBqlv9mx5FScSuuIw&oe=632CA864"
+                <img id="slide1" src=""
                     class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://scontent.fmaa1-3.fna.fbcdn.net/v/t39.30808-6/307093224_2894862207475953_1794706171558232979_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_7IW1OBVftAAX_MIT6D&_nc_ht=scontent.fmaa1-3.fna&oh=00_AT-gtLfvbnN4GZB9qcw5lV8mBsBWnp4utm-bHbwfkJf87w&oe=632BBF68"
+                <img id="slide2" src="https://scontent.fmaa1-3.fna.fbcdn.net/v/t39.30808-6/307093224_2894862207475953_1794706171558232979_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_7IW1OBVftAAX_MIT6D&_nc_ht=scontent.fmaa1-3.fna&oh=00_AT-gtLfvbnN4GZB9qcw5lV8mBsBWnp4utm-bHbwfkJf87w&oe=632BBF68"
                     class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXGlSaS5mfgN3oHxg848oa9r4hp4vfKflJ_Q&usqp=CAU"
+                <img id="slide3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXGlSaS5mfgN3oHxg848oa9r4hp4vfKflJ_Q&usqp=CAU"
                     class="d-block w-100" alt="...">
             </div>
+            <!-- <div class="carousel-item">
+                <img id="slie3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXGlSaS5mfgN3oHxg848oa9r4hp4vfKflJ_Q&usqp=CAU"
+                    class="d-block w-100" alt="...">
+            </div> -->
+            
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
@@ -137,61 +142,65 @@
     <hr>
         <h1 class="text-center" style="color:red ;">Type Of Sarees</h1>
         <br>
-        <div class="all-type-saree">
-            <div class="type">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-o9MRuItZd6G2aGlLQtHzCm-oaiFtsrOXeA&usqp=CAU" alt="">
-                <h2>custom sarees</h2>
-                <p>here describsion sbout the sarees..</p>
 
+        <div class="sarees-type d-flex justify-content-around flex-wrap">
+            <div class="card m-3" syle="width: 18rem;">
+                <img id="type1" src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                <!--  typec1 means -type-code-no.1 -->
+                <!-- typel1 means - type-link-no.1 -->
+                  <h5 id="typec1" class="card-title">Card title</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a id="typel1" href="" class="btn btn-danger">Buy</a>
+                </div>
             </div>
-            <div class="type">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-o9MRuItZd6G2aGlLQtHzCm-oaiFtsrOXeA&usqp=CAU" alt="">
-                <h2>custom sarees</h2>
-                <p>here describsion sbout the sarees..</p>
-
+            <div class="card m-3" syle="width: 18rem;">
+                <img id="type2" src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="typec2" class="card-title">Card title</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a id="typel2" href="" class="btn btn-danger">Buy</a>
+                </div>
             </div>
-            <div class="type">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-o9MRuItZd6G2aGlLQtHzCm-oaiFtsrOXeA&usqp=CAU" alt="">
-                <h2>custom sarees</h2>
-                <p>here describsion sbout the sarees..</p>
-
-            </div>
-            <div class="type">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-o9MRuItZd6G2aGlLQtHzCm-oaiFtsrOXeA&usqp=CAU" alt="">
-                <h2>custom sarees</h2>
-                <p>here describsion sbout the sarees..</p>
-
+            <div class="card m-3" syle="width: 18rem;">
+                <img id="type3" src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="typec3" class="card-title">Card title</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a id="typel3" href="" class="btn btn-danger">Buy</a>
+                </div>
             </div>
         </div>
+        
         <!-- Top offer section  -->
         <hr>
         <h1 class=" text-center" style="color:red ;">Top Offer</h1>
-        <div class="top-offer">
+        <div class="top-offer d-flex justify-content-around flex-wrap">
+            <div class="card m-3" syle="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-danger">Buy</a>
+                </div>
+            </div>
+            <div class="card m-3" syle="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-danger">Buy</a>
+                </div>
+            </div>
+            <div class="card m-3" syle="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-danger">Buy</a>
+                </div>
+            </div>
             
-            <a href="">
-                <div class="offer">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIae-OV4HiQcOwl1EyQZN56fmHrGdX66Z1Q&usqp=CAU" alt="">
-                    <h4>40%off.</h4>
-                </div>
-            </a>
-            <a href="">
-                <div class="offer">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIae-OV4HiQcOwl1EyQZN56fmHrGdX66Z1Q&usqp=CAU" alt="">
-                    <h4>40%off.</h4>
-                </div>
-            </a>
-            <a href="">
-                <div class="offer">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIae-OV4HiQcOwl1EyQZN56fmHrGdX66Z1Q&usqp=CAU" alt="">
-                    <h4>40%off.</h4>
-                </div>
-            </a>
-            <a href="">
-                <div class="offer">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIae-OV4HiQcOwl1EyQZN56fmHrGdX66Z1Q&usqp=CAU" alt="">
-                    <h4>40%off  <button class="btn bg-danger" style="color: white;">buy</button></h4>
-                </div>
-            </a>
         </div>
         <hr>
         <!-- about section start here -->
@@ -209,15 +218,40 @@
         <br>
         <!-- available prodeuct -->
         <h1 class="text-center text-danger">Product Availavle </h1><br>
+        <!-- <a href="product.html" style="text-decoration: none;color: black;"> -->
         <div class="product d-flex justify-content-around flex-wrap   ">
-            <img style="width: 300px;" class="m-1 rounded"  src="https://scontent.fcjb3-1.fna.fbcdn.net/v/t39.30808-6/307465250_498497345619091_4399478488378763426_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=xlmm6_M2Xy4AX_QZQOb&_nc_ht=scontent.fcjb3-1.fna&oh=00_AT_Z-s_LdQuULMwZE1nZUg_tBqLFIVTgaelg0-KPicQGhg&oe=6332B716" alt="">
+            <div class="card m-3" syle="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-danger">Buy</a>
+                </div>
+            </div>
+            <div class="card m-3" syle="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-danger">Buy</a>
+                </div>
+            </div>
+            <div class="card m-3" syle="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a href="#" class="btn btn-danger">Buy</a>
+                </div>
+            </div>
+            <!-- <img style="width: 300px;" class="m-1 rounded"  src="https://scontent.fcjb3-1.fna.fbcdn.net/v/t39.30808-6/307465250_498497345619091_4399478488378763426_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=xlmm6_M2Xy4AX_QZQOb&_nc_ht=scontent.fcjb3-1.fna&oh=00_AT_Z-s_LdQuULMwZE1nZUg_tBqLFIVTgaelg0-KPicQGhg&oe=6332B716" alt="">
             <img style="width: 300px;" class="m-1 rounded" src="https://scontent.fcjb3-1.fna.fbcdn.net/v/t39.30808-6/307465250_498497345619091_4399478488378763426_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=xlmm6_M2Xy4AX_QZQOb&_nc_ht=scontent.fcjb3-1.fna&oh=00_AT_Z-s_LdQuULMwZE1nZUg_tBqLFIVTgaelg0-KPicQGhg&oe=6332B716" alt="">
             <img style="width: 300px;" class="m-1 rounded" src="https://scontent.fcjb3-1.fna.fbcdn.net/v/t39.30808-6/307465250_498497345619091_4399478488378763426_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=xlmm6_M2Xy4AX_QZQOb&_nc_ht=scontent.fcjb3-1.fna&oh=00_AT_Z-s_LdQuULMwZE1nZUg_tBqLFIVTgaelg0-KPicQGhg&oe=6332B716" alt="">
-            
+             -->
         </div>
+        <h1 class=" text-danger text-center"><a href="product.html" style="text-decoration: none; color: rgb(197, 59, 59);" >More >> </a></h1>
+        <!-- </a> -->
         
-        
-        <h1 class=" text-danger text-center">More <i class="fa-solid fa-angles-right"></i></h1>
         <!-- video sectiion  -->
         <div class="video-section">
 
@@ -230,7 +264,7 @@
             <br>
             <div class="contact-section d-flex justify-content-around flex-wrap">
                 <!-- location  -->
-                <div class="contat border-end border-danger border-3 d-flex justify-content-center align-items-center" style="width: 300px; height: 300px; ">
+                <div class="contat left-border d-flex justify-content-center align-items-center" style="width: 300px; height: 300px; ">
                     <div style="text-align: center; " class="p-4">
                     <i class="fa-solid fa-location-dot text-center text-danger fs-1 text-center "></i>
                     <hr>
@@ -240,7 +274,7 @@
                     </div>
                 </div>
                 <!-- social media -->
-                <div class="contat border-end border-danger border-3 d-flex justify-content-center align-items-center" style="width: 300px; height: 300px;">
+                <div class="contat d-flex justify-content-center align-items-center" style="width: 300px; height: 300px;">
                     <div style="text-align: center; ">
                         <i class="fa-solid fa-hashtag text-center text-danger fs-1"></i>
                         <hr>
@@ -251,7 +285,7 @@
                     </div>
                 </div>
                 <!-- mail -->
-                <div class="contat border-end border-danger border-3 d-flex justify-content-center align-items-center"  style="width: 300px; height: 300px;">
+                <div class="contat  d-flex justify-content-center align-items-center"  style="width: 300px; height: 300px;">
                     <div style="text-align: center;" >
                         <i class="fa-solid fa-envelope text-center text-danger fs-1"></i>
                         <hr>
@@ -284,12 +318,84 @@
             <a class="m-2" href="https://www.instagram.com/keerthanasilk_kanchipuram/"><i class="fa-brands fa-instagram "></i></a>
             <a class="m-2 text-light" href="http://wa.me/917904999697"><i class="fa-brands fa-whatsapp"></i>  +91xxxxxxxx</a> 
             <a class="m-2 text-light" href=""> <i class="fa-solid fa-location-dot"></i>  Kanchipuram</a>
-        <!-- <a class="m-2" href="mailto: kesavanshanmugam45@gmail.com"><i class="fa-solid fa-envelope"></i></a> -->
+           <br><br>
+            <h5 class="text-light">@Copy rights by <br> Keerthana shanmugam</h5>
+        
+        
+        
+            <!-- <a class="m-2" href="mailto: kesavanshanmugam45@gmail.com"><i class="fa-solid fa-envelope"></i></a> -->
         <!-- <span class="text-light m-2">902572642</span>
         <span class="text-light">kesavanshanmugam45@gmail.com</span> -->
         <!-- <span>address </span> -->
         <!-- <a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">w</a> -->
         
+        <script type="module" >
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyARfcfblQDIMDPQ7WbH8bx4OBeY8nLPJQc",
+  authDomain: "keethana-silks.firebaseapp.com",
+  projectId: "keethana-silks",
+  storageBucket: "keethana-silks.appspot.com",
+  messagingSenderId: "425795328872",
+  appId: "1:425795328872:web:5cc0bb4ef4a740602214dd"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+import{getDatabase,ref ,get ,child ,update ,remove} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+// var i1 =  document.getElementById('img1');
+const dp = getDatabase();
+const refe= ref(dp);
+var s='img1';
+// dp.on('value',snap => il.src = snap.val());
+get(child(refe,'home/')).then((snapshot)=>{
+    // i1.src =  snapshot.val().img1;
+    // here code for connecting the three slide to the fire base 
+    document.getElementById('slide1').src= snapshot.val().slide1;
+    document.getElementById('slide2').src= snapshot.val().slide2;
+    document.getElementById('slide3').src= snapshot.val().slide3;
+    // here code for connecting the (type of saaress)
+    // document.getElementById('type1').src= snapshot.val().type1;
+    // document.getElementById('typec1').innerText= snapshot.val().typec1;
+    // document.getElementById('typel1').href='http://wa.me/917904999697/?text='+snapshot.val().typel1;
+
+
+
+
+});
+
+get(child(refe,'home/typesaare')).then((snapshot)=>{
+    
+    // here code for connecting the (type of saaress)
+    document.getElementById('type1').src= snapshot.val().type1;
+    document.getElementById('typec1').innerText= snapshot.val().typec1;
+    document.getElementById('typel1').href='http://wa.me/917904999697/?text='+snapshot.val().typel1;
+    // 
+    document.getElementById('type2').src= snapshot.val().type2;
+    document.getElementById('typec2').innerText= snapshot.val().typec2;
+    document.getElementById('typel2').href='http://wa.me/917904999697/?text='+snapshot.val().typel2;
+    //    
+    document.getElementById('type3').src= snapshot.val().type3;
+    document.getElementById('typec3').innerText= snapshot.val().typec3;
+    document.getElementById('typel3').href='http://wa.me/917904999697/?text='+snapshot.val().typel3;
+
+
+
+
+
+
+});
+
+
+
+
+
+        </script>
         </div>
         <!-- </div> -->
     </body>
