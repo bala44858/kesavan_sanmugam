@@ -16,7 +16,9 @@
     <!-- font awsome  -->
     <script src="https://kit.fontawesome.com/2583af48b5.js" crossorigin="anonymous"></script>
 
-
+    <!--scrolling   -->
+    <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <style type="module" src="js.js">
 
@@ -318,17 +320,18 @@
             <a class="m-2" href="https://www.instagram.com/keerthanasilk_kanchipuram/"><i class="fa-brands fa-instagram "></i></a>
             <a class="m-2 text-light" href="http://wa.me/917904999697"><i class="fa-brands fa-whatsapp"></i>  +91xxxxxxxx</a> 
             <a class="m-2 text-light" href=""> <i class="fa-solid fa-location-dot"></i>  Kanchipuram</a>
-           <br><br>
+            <br><br>
             <h5 class="text-light">@Copy rights by <br> Keerthana shanmugam</h5>
         
         
         
             <!-- <a class="m-2" href="mailto: kesavanshanmugam45@gmail.com"><i class="fa-solid fa-envelope"></i></a> -->
         <!-- <span class="text-light m-2">902572642</span>
-        <span class="text-light">kesavanshanmugam45@gmail.com</span> -->
-        <!-- <span>address </span> -->
-        <!-- <a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">w</a> -->
-        
+            <span class="text-light">kesavanshanmugam45@gmail.com</span> -->
+            <!-- <span>address </span> -->
+            <!-- <a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">w</a> -->
+            
+        </div>
         <script type="module" >
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
@@ -394,9 +397,9 @@ get(child(refe,'home/typesaare')).then((snapshot)=>{
 
 
 
-
-        </script>
-        </div>
+// here for scrolling animation
+ScrollReveal().reveal('.card', { duration: 1500 });
+</script>
         <!-- </div> -->
     </body>
 
