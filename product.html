@@ -99,15 +99,23 @@
     <h1 class="text-center text-danger">saares for sales</h1>
     <br>
     <div class="gallery  d-flex justify-content-around flex-wrap">
-        <div class="card m-3" style="width: 18rem;">
-            <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
+        <div class="card m-3" stle="width: 302px; height: fit-content;">
+            <img id="img1" src="" stle="height:300px ; width: 300px;;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="img1-id"></h5>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+              <a href="#" class="btn btn-danger">Buy</a>
+            </div>
+        </div>
+        <div class="card m-3" stye="width: 302px; height: auto;">
+            <img  syle="width:300px; height: 300px; " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
               <a href="#" class="btn btn-danger">Buy</a>
             </div>
         </div>
-        <div class="card m-3" style="width: 18rem;">
+        <div class="card m-3" stle="width: 18rem;">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -115,7 +123,7 @@
               <a href="#" class="btn btn-danger">Buy</a>
             </div>
         </div>
-        <div class="card m-3" style="width: 18rem;">
+        <div class="card m-3" stle="width: 18rem;">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -123,7 +131,7 @@
               <a href="#" class="btn btn-danger">Buy</a>
             </div>
         </div>
-        <div class="card m-3" style="width: 18rem;">
+        <div class="card m-3"  stye="width: 18rem;">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -131,7 +139,7 @@
               <a href="#" class="btn btn-danger">Buy</a>
             </div>
         </div>
-        <div class="card m-3"  style="width: 18rem;">
+        <div class="card m-3" tyle="width: 18rem;">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -139,15 +147,7 @@
               <a href="#" class="btn btn-danger">Buy</a>
             </div>
         </div>
-        <div class="card m-3" style="width: 18rem;">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-              <a href="#" class="btn btn-danger">Buy</a>
-            </div>
-        </div>
-        <div class="card m-3" style="width: 18rem;">
+        <div class="card m-3" syle="width: 18rem;">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVzQ-Fjjy6mndIgLg5cub1E8Dmgwnj1SU5AK3I5jVrQ&s" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -203,10 +203,11 @@
         // dp.on('value',snap => il.src = snap.val());
         get(child(refe,'/')).then((snapshot)=>{
             i1.src =  snapshot.val().img1;
+            document.getElementById('img1-id').innerText = snapshot.val().i;
         });
         
       </script>
-      <script src="js.js"></script>
+      <!-- <script  type="module" src="js.js"></script> -->
 </body>
 
 </html>
